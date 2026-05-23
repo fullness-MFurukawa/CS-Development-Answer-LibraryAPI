@@ -1,4 +1,4 @@
-namespace LibraryApi.Infrastructures.Tests;
+namespace LibraryApi.Presentations.Tests;
 
 [TestClass]
 public class UnitTest1
