@@ -1,6 +1,7 @@
 using LibraryApi.Domains.Aggregators;
 using LibraryApi.Infrastructure.Contexts;
 using LibraryApi.Infrastructure.Entities;
+using LibraryApi.Infrastructure.Exceptions;
 using LibraryAPi.Domains.Exceptions;
 using LibraryAPi.Domains.Models;
 using LibraryAPi.Domains.Repositories;
@@ -126,7 +127,7 @@ public class BookRepository : IBookRepository
 
         if (bookEntity is null)
         {
-            throw new DomainException("対象の図書が存在しません。", nameof(book));
+             throw new EntityNotFoundException("対象の図書が存在しません。");
         }
 
         // 変更可能な項目(書名・著者名)を上書きする
@@ -154,7 +155,7 @@ public class BookRepository : IBookRepository
 
         if (bookEntity is null)
         {
-            throw new DomainException("対象の図書が存在しません。", nameof(book));
+            throw new EntityNotFoundException("対象の図書が存在しません。");
         }
 
         // 図書を削除する。内包する蔵書は OnDelete(Cascade) により自動的に削除される
@@ -178,7 +179,7 @@ public class BookRepository : IBookRepository
 
         if (category is null)
         {
-            throw new DomainException("指定された分類が存在しません。", nameof(categoryUuid));
+            throw new EntityNotFoundException("指定された分類が存在しません。");
         }
 
         return category.Id;
