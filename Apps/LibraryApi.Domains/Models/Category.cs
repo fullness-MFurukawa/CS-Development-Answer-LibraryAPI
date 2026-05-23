@@ -95,7 +95,7 @@ public class Category : Entity
             throw new DomainException("分類名は必須です。",nameof(name));
         }
 
-        // 最大文字数チェック。DB の桁あふれを、永続化前にドメイン層で検出する
+        // 最大文字数チェック。DBの桁あふれを、永続化前にドメイン層で検出する
         if (name.Length > NameMaxLength)
         {
             throw new DomainException(
