@@ -66,7 +66,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// (認証は後で追加する)
+// 認証は後で追加する
 
 app.MapControllers();
 
