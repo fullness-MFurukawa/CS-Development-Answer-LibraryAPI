@@ -45,7 +45,7 @@ public class FindBookInteractor : IFindBookUseCase
         // (プレゼンテーション層がこれを 404 Not Found に変換する)
         if (book is null)
         {
-            throw new NotFoundException("指定された図書が存在しません。");
+            throw new NotFoundException("BookNotFound", "指定された図書が存在しません。");
         }
 
         // 取得した図書を DTO に変換して返す(ドメイン → DTO)

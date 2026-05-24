@@ -47,7 +47,7 @@ public class RegisterBookInteractor : IRegisterBookUseCase
         if (category is null)
         {
             // 形式は妥当だが、指す対象が存在しない → 入力の不正として扱う(400相当)
-            throw new InvalidInputException("指定された分類が存在しません。");
+            throw new InvalidInputException("CategoryNotFound", "指定された分類が存在しません。");
         }
 
         // 実在する分類を用いて、図書(集約)を構築する

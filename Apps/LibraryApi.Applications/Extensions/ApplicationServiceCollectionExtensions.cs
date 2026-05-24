@@ -3,36 +3,38 @@ using LibraryApi.Applications.Authentications;
 using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.Services;
 using LibraryApi.Applications.UseCases;
+using LibraryApi.Applications.UseCases.UnitOfWorks;
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Domains.Models;
 using Microsoft.Extensions.DependencyInjection;
-namespace LibraryApi.Applications.Extensions; 
+namespace LibraryApi.Applications.Extensions;
 /// <summary>
 /// アプリケーション層の構成要素を DI コンテナへ登録する拡張メソッドを提供する
-///
-/// アプリケーション層の登録に関する知識を本クラスに閉じ込めることで、
-/// プレゼンテーション層は AddApplication を一度呼ぶだけでよい。
 /// </summary>
 public static class ApplicationServiceCollectionExtensions
 {
     /// <summary>
-    /// アプリケーション層の構成要素(Service など)を登録する
+    /// アプリケーション層の構成要素(Service・UseCase・認証コンポーネントなど)を登録する
     /// </summary>
     /// <param name="services">DI コンテナ</param>
-    /// <returns>登録後のDIコンテナ(メソッドチェーン用)</returns>
-    public static IServiceCollection AddApplication(this IServiceCollection services)
+    /// <param name="jwtSettings">JWT の設定値(プレゼンテーション層が外部設定から組み立てて渡す)</param>
+    /// <returns>登録後の DI コンテナ(メソッドチェーン用)</returns>
+    public static IServiceCollection AddApplication(
+        this IServiceCollection services,
+        JwtSettings jwtSettings)
     {
         // Service(リポジトリに依存するため Scoped)
         services.AddScoped<ICategoryService, CategoryService>();
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IBookService, BookService>();
 
-        // UseCase(Service・Adapterに依存するためScoped)
+        // UseCase(Service・Adapter に依存するため Scoped)
         services.AddScoped<IFindCategoriesUseCase, FindCategoriesInteractor>();
         services.AddScoped<ISearchBooksUseCase, SearchBooksInteractor>();
         services.AddScoped<IFindBookUseCase, FindBookInteractor>();
         services.AddScoped<IRegisterBookUseCase, RegisterBookInteractor>();
         services.AddScoped<IUpdateBookUseCase, UpdateBookInteractor>();
+        services.AddScoped<IDeleteBookUseCase, DeleteBookInteractor>(); // 追加(抜けていた)
 
         // DTO Adapter(状態を持たない変換ロジックのため Singleton)
         services.AddSingleton<IAdapter<Category, CategoryDto>, CategoryDtoAdapter>();
@@ -40,9 +42,12 @@ public static class ApplicationServiceCollectionExtensions
 
         // パスワードのハッシュ化・照合を行うコンポーネント(状態を持たないため Singleton)
         services.AddSingleton<IPasswordService, PasswordService>();
-        // JWTの発行を行うコンポーネント(状態を持たないため Singleton)
-        services.AddSingleton<IJwtTokenProvider, JwtTokenProvider>();
 
+        // JWT の設定値を登録し、JwtTokenProvider に注入できるようにする
+        services.AddSingleton(jwtSettings);
+        // JWT の発行を行うコンポーネント(状態を持たないため Singleton)
+        services.AddSingleton<IJwtTokenProvider, JwtTokenProvider>();
+        
         return services;
     }
 }

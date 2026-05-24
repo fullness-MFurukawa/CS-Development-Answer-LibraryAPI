@@ -46,7 +46,7 @@ public class UpdateBookInteractor : IUpdateBookUseCase
         if (book is null)
         {
             // 変更対象のリソースが存在しない → 404 相当
-            throw new NotFoundException("指定された図書が存在しません。");
+            throw new NotFoundException("BookNotFound", "指定された図書が存在しません。");
         }
 
         // 書名・著者名・蔵書数を変更する

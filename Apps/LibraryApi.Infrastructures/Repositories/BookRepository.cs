@@ -149,8 +149,9 @@ public class BookRepository : IBookRepository
     {
         // 削除対象の既存レコードを取得する
         var bookEntity = await _context.Books
-            .FirstOrDefaultAsync(b => b.BookUuid == book.BookUuid);
-
+        .Include(b => b.BookStock)
+        .FirstOrDefaultAsync(b => b.BookUuid == book.BookUuid);
+        
         if (bookEntity is null)
         {
             throw new EntityNotFoundException("対象の図書が存在しません。");

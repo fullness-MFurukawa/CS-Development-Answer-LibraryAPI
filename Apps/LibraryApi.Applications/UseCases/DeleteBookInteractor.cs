@@ -37,7 +37,7 @@ public class DeleteBookInteractor : IDeleteBookUseCase
         if (book is null)
         {
             // 削除対象のリソースが存在しない → 404 相当
-            throw new NotFoundException("指定された図書が存在しません。");
+            throw new NotFoundException("BookNotFound", "指定された図書が存在しません。");
         }
 
         // 図書と蔵書を同一トランザクションで削除する(UC-06 BR-01)
