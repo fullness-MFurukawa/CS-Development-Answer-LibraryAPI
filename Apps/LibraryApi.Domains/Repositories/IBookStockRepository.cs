@@ -1,7 +1,5 @@
-using LibraryAPi.Domains.Models;
-
-namespace LibraryAPi.Domains.Repositories;
-
+using LibraryApi.Domains.Models;
+namespace LibraryApi.Domains.Repositories;
 /// <summary>
 /// 蔵書(BookStock)の永続化を担うリポジトリのインターフェイス
 /// 蔵書は図書(Book)に内包される集約の内部エンティティだが、本プロジェクトの方針として

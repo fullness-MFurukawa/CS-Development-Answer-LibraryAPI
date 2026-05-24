@@ -5,11 +5,10 @@ using LibraryApi.Infrastructure.Aggregators;
 using LibraryApi.Infrastructure.Contexts;
 using LibraryApi.Infrastructure.Entities;
 using LibraryApi.Infrastructure.Repositories;
-using LibraryAPi.Domains.Models;
-using LibraryAPi.Domains.Repositories;
+using LibraryApi.Domains.Models;
+using LibraryApi.Domains.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-
 namespace LibraryApi.Infrastructure.Extensions;
 /// <summary>
 /// インフラストラクチャ層の構成要素を DI コンテナへ登録する拡張メソッドを提供する

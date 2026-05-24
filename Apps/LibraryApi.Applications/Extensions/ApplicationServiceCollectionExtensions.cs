@@ -1,11 +1,11 @@
 using LibraryApi.Applications.Adapters;
+using LibraryApi.Applications.Authentications;
 using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.Services;
 using LibraryApi.Applications.UseCases;
 using LibraryApi.Domains.Adapters;
-using LibraryAPi.Domains.Models;
+using LibraryApi.Domains.Models;
 using Microsoft.Extensions.DependencyInjection;
-
 namespace LibraryApi.Applications.Extensions; 
 /// <summary>
 /// アプリケーション層の構成要素を DI コンテナへ登録する拡張メソッドを提供する
@@ -37,6 +37,11 @@ public static class ApplicationServiceCollectionExtensions
         // DTO Adapter(状態を持たない変換ロジックのため Singleton)
         services.AddSingleton<IAdapter<Category, CategoryDto>, CategoryDtoAdapter>();
         services.AddSingleton<IAdapter<Book, BookDto>, BookDtoAdapter>();
+
+        // パスワードのハッシュ化・照合を行うコンポーネント(状態を持たないため Singleton)
+        services.AddSingleton<IPasswordService, PasswordService>();
+        // JWTの発行を行うコンポーネント(状態を持たないため Singleton)
+        services.AddSingleton<IJwtTokenProvider, JwtTokenProvider>();
 
         return services;
     }

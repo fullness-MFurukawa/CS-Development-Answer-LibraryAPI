@@ -1,7 +1,6 @@
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Infrastructure.Entities;
-using LibraryAPi.Domains.Models;
-
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Infrastructure.Adapters;
 
 /// <summary>

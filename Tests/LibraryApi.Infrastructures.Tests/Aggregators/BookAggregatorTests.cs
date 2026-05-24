@@ -1,9 +1,7 @@
 using LibraryApi.Infrastructure.Adapters;
 using LibraryApi.Infrastructure.Aggregators;
 using LibraryApi.Infrastructure.Entities;
-
 namespace LibraryApi.Infrastructure.Tests.Aggregators;
-
 /// <summary>
 /// BookAggregator の単体テストドライバ
 /// BookEntity(分類・蔵書を内包)から、ドメインの集約 Book を構築することを検証する

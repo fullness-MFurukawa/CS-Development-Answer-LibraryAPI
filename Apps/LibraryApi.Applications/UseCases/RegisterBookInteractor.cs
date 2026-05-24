@@ -3,8 +3,7 @@ using LibraryApi.Applications.Exceptions;
 using LibraryApi.Applications.Services;
 using LibraryApi.Applications.UseCases.UnitOfWorks; 
 using LibraryApi.Domains.Adapters;
-using LibraryAPi.Domains.Models;
-
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Applications.UseCases;
 /// <summary>
 /// IRegisterBookUseCase の実装(Interactor)

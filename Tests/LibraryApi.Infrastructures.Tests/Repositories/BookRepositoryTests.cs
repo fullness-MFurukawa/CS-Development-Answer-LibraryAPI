@@ -1,9 +1,8 @@
 using LibraryApi.Infrastructure.Exceptions;
-using LibraryAPi.Domains.Models;
-using LibraryAPi.Domains.Repositories;
+using LibraryApi.Domains.Models;
+using LibraryApi.Domains.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 namespace LibraryApi.Infrastructures.Tests.Repositories;
-
 /// <summary>
 /// BookRepository の統合テストドライバ(検索系)
 /// 実際の library_db に接続し、Include による集約の構築を含めて取得結果を検証する

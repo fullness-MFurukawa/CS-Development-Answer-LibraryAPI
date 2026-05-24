@@ -3,9 +3,7 @@ using LibraryApi.Infrastructure.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
 namespace LibraryApi.Infrastructures.Tests.Repositories;
-
 /// <summary>
 /// リポジトリ統合テストの共通基底クラス
 ///

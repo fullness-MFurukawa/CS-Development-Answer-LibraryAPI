@@ -1,7 +1,5 @@
-using LibraryAPi.Domains.Models;
-
-namespace LibraryAPi.Domains.Repositories;
-
+using LibraryApi.Domains.Models;
+namespace LibraryApi.Domains.Repositories;
 /// <summary>
 /// 図書(Book)の永続化を担うリポジトリのインターフェイス
 /// Book は集約ルートであり、内包する蔵書(BookStock)・参照する分類(Category)を伴って取得される

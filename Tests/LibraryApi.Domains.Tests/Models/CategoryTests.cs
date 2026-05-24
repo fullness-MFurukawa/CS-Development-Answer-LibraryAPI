@@ -1,5 +1,5 @@
-using LibraryAPi.Domains.Exceptions;
-using LibraryAPi.Domains.Models;
+using LibraryApi.Domains.Exceptions;
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Domains.Tests.Models;
 /// <summary>
 /// Categoryエンティティの単体テストドライバ

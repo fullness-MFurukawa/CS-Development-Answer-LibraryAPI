@@ -1,4 +1,4 @@
-namespace LibraryAPi.Domains.Exceptions;
+namespace LibraryApi.Domains.Exceptions;
 
 /// <summary>
 /// 業務制約を表す例外クラス

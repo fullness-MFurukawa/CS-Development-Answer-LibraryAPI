@@ -1,5 +1,4 @@
 namespace LibraryApi.Applications.Exceptions;
-
 /// <summary>
 /// 要求されたリソースが見つからない場合にスローされる例外
 ///

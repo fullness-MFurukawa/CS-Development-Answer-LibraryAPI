@@ -1,4 +1,4 @@
-using LibraryAPi.Domains.Models;
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Applications.Services;
 /// <summary>
 /// ユーザーに関する操作を提供するサービスのインターフェイス

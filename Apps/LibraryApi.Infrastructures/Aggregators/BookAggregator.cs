@@ -1,7 +1,7 @@
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Domains.Aggregators;
 using LibraryApi.Infrastructure.Entities;
-using LibraryAPi.Domains.Models;
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Infrastructure.Aggregators;
 /// <summary>
 /// EF Core エンティティ BookEntity から、ドメインの集約 Book を構築する Aggregator

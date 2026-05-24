@@ -1,4 +1,4 @@
-namespace LibraryAPi.Domains.Models;
+namespace LibraryApi.Domains.Models;
 /// <summary>
 /// すべてのエンティティが継承する抽象基底クラス
 /// ドメイン駆動設計における「エンティティの同一性(identity)」を一元的に提供する

@@ -1,5 +1,4 @@
 namespace LibraryApi.Infrastructure.Exceptions;
-
 /// <summary>
 /// 期待したエンティティ(データ)がデータベースに存在しない場合にスローされる例外
 ///

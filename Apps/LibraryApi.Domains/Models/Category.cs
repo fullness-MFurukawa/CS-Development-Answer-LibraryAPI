@@ -1,5 +1,5 @@
-using LibraryAPi.Domains.Exceptions;
-namespace LibraryAPi.Domains.Models;
+using LibraryApi.Domains.Exceptions;
+namespace LibraryApi.Domains.Models;
 /// <summary>
 /// 分類(category)エンティティクラス
 /// 図書を分類するカテゴリー(例:小説、技術書、児童書)を表すドメインモデル

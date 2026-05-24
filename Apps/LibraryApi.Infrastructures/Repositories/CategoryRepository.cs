@@ -1,12 +1,10 @@
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Infrastructure.Contexts;
 using LibraryApi.Infrastructure.Entities;
-using LibraryAPi.Domains.Models;
-using LibraryAPi.Domains.Repositories;
+using LibraryApi.Domains.Models;
+using LibraryApi.Domains.Repositories;
 using Microsoft.EntityFrameworkCore;
-
 namespace LibraryApi.Infrastructure.Repositories;
-
 /// <summary>
 /// ICategoryRepository の実装(分類の永続化を担う)
 ///

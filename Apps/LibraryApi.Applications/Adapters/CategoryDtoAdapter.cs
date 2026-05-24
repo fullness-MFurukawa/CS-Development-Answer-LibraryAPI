@@ -1,6 +1,6 @@
 using LibraryApi.Applications.Dtos;
 using LibraryApi.Domains.Adapters;
-using LibraryAPi.Domains.Models;
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Applications.Adapters;
 /// <summary>
 /// ドメインエンティティ Category と、DTO である CategoryDto を相互変換する Adapter

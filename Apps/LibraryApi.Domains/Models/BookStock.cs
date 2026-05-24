@@ -1,6 +1,6 @@
-using LibraryAPi.Domains.Exceptions;
+using LibraryApi.Domains.Exceptions;
 
-namespace LibraryAPi.Domains.Models;
+namespace LibraryApi.Domains.Models;
 
 /// <summary>
 /// 蔵書(book_stock)エンティティクラス

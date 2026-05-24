@@ -2,13 +2,11 @@ using LibraryApi.Domains.Aggregators;
 using LibraryApi.Infrastructure.Contexts;
 using LibraryApi.Infrastructure.Entities;
 using LibraryApi.Infrastructure.Exceptions;
-using LibraryAPi.Domains.Exceptions;
-using LibraryAPi.Domains.Models;
-using LibraryAPi.Domains.Repositories;
+using LibraryApi.Domains.Exceptions;
+using LibraryApi.Domains.Models;
+using LibraryApi.Domains.Repositories;
 using Microsoft.EntityFrameworkCore;
-
 namespace LibraryApi.Infrastructure.Repositories;
-
 /// <summary>
 /// IBookRepository の実装(図書の永続化を担う)
 ///

@@ -1,5 +1,5 @@
-using LibraryAPi.Domains.Models;
-namespace LibraryAPi.Domains.Repositories;
+using LibraryApi.Domains.Models;
+namespace LibraryApi.Domains.Repositories;
 /// <summary>
 /// ユーザー(User)の永続化を担うリポジトリのインターフェイス
 /// 実装はインフラストラクチャ層に配置する

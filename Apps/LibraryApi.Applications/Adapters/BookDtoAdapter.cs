@@ -1,6 +1,6 @@
 using LibraryApi.Applications.Dtos;
 using LibraryApi.Domains.Adapters;
-using LibraryAPi.Domains.Models;
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Applications.Adapters;
 /// <summary>
 /// ドメインの集約 Book と、DTO である BookDto を変換する Adapter

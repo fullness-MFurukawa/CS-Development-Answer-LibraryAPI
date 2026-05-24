@@ -1,8 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
 namespace LibraryApi.Infrastructure.Entities;
-
 /// <summary>
 /// book テーブルに対応する EF Core エンティティ(永続化モデル)
 ///

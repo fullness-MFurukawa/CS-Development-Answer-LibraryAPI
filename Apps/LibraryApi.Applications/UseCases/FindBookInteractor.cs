@@ -2,7 +2,7 @@ using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.Exceptions;
 using LibraryApi.Applications.Services;
 using LibraryApi.Domains.Adapters;
-using LibraryAPi.Domains.Models;
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Applications.UseCases;
 /// <summary>
 /// IFindBookUseCase の実装(Interactor)

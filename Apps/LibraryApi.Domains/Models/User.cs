@@ -1,5 +1,5 @@
-using LibraryAPi.Domains.Exceptions;
-namespace LibraryAPi.Domains.Models;
+using LibraryApi.Domains.Exceptions;
+namespace LibraryApi.Domains.Models;
 
 /// <summary>
 /// ユーザー(users)エンティティクラス

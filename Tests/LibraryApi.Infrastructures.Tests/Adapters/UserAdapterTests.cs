@@ -1,10 +1,8 @@
 using LibraryApi.Infrastructure.Adapters;
 using LibraryApi.Infrastructure.Entities;
-using LibraryAPi.Domains.Exceptions;
-using LibraryAPi.Domains.Models;
-
+using LibraryApi.Domains.Exceptions;
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Infrastructure.Tests.Adapters;
-
 /// <summary>
 /// UserAdapter の単体テストドライバ
 /// User(ドメイン)と UserEntity(EF Core)の相互変換を検証する

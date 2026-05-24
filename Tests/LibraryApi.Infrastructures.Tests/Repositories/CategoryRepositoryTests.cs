@@ -1,8 +1,6 @@
-using LibraryAPi.Domains.Repositories;
+using LibraryApi.Domains.Repositories;
 using Microsoft.Extensions.DependencyInjection;
-
 namespace LibraryApi.Infrastructures.Tests.Repositories;
-
 /// <summary>
 /// CategoryRepository の統合テストドライバ
 /// 実際の library_db に接続し、取得結果を検証する

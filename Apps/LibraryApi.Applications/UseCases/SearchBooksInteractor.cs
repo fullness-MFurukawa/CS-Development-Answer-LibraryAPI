@@ -1,7 +1,7 @@
 using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.Services;
 using LibraryApi.Domains.Adapters;
-using LibraryAPi.Domains.Models;
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Applications.UseCases;
 /// <summary>
 /// ISearchBooksUseCase の実装(Interactor)

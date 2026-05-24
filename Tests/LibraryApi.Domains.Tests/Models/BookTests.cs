@@ -1,8 +1,6 @@
-using LibraryAPi.Domains.Exceptions;
-using LibraryAPi.Domains.Models;
-
+using LibraryApi.Domains.Exceptions;
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Domains.Tests.Models;
-
 /// <summary>
 /// Bookエンティティ(集約ルート)の単体テストドライバ
 /// 集約ルートとして、内包する BookStock・参照する Category を正しく扱えること、

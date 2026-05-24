@@ -1,7 +1,5 @@
-using LibraryAPi.Domains.Models;
-
+using LibraryApi.Domains.Models;
 namespace LibraryApi.Domains.Tests.Models;
-
 /// <summary>
 /// Entity基底クラスの単体テストドライバ
 /// Entity は抽象クラスのため、テスト専用の具象クラス(TestEntity)を用意して

@@ -1,5 +1,5 @@
-using LibraryAPi.Domains.Models;
-namespace LibraryAPi.Domains.Repositories;
+using LibraryApi.Domains.Models;
+namespace LibraryApi.Domains.Repositories;
 /// <summary>
 /// 分類(Category)の永続化を担うリポジトリのインターフェイス
 /// 実装はインフラストラクチャ層に配置し、依存性逆転の原則によりドメイン層は実装に依存しない
