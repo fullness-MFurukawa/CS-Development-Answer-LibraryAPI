@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace LibraryApi.Presentations.Controllers;
 /// <summary>
-/// 分類に関するAPIを提供するコントローラー
+/// 分類に関するAPIを提供する
 ///
 /// 補助API:図書登録時にクライアントが分類を選択するための分類一覧を提供する。
 /// </summary>

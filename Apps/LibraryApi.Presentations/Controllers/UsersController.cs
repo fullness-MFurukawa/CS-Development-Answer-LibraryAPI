@@ -5,7 +5,7 @@ using LibraryApi.Presentations.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 namespace LibraryApi.Presentations.Controllers;
 /// <summary>
-/// ユーザーに関する API を提供するコントローラー
+/// ユーザーに関する API を提供する
 /// </summary>
 [ApiController]
 [Route("library/api/users")]

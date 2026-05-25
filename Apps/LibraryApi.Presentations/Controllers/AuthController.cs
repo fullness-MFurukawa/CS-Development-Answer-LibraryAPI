@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace LibraryApi.Presentations.Controllers;
 /// <summary>
-/// 認証(ログイン・ログアウト)に関する API を提供するコントローラー
+/// 認証(ログイン・ログアウト)に関する API を提供する
 /// </summary>
 [ApiController]
 [Route("library/api/auth")]
