@@ -2,6 +2,7 @@ using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.UseCases;
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Presentations.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace LibraryApi.Presentations.Controllers;
 /// <summary>
@@ -12,6 +13,7 @@ namespace LibraryApi.Presentations.Controllers;
 [ApiController]
 [Route("library/api/categories")]
 [Tags("図書の分類")]
+[Authorize] 
 public class CategoriesController : ControllerBase
 {
     private readonly IFindCategoriesUseCase _findCategoriesUseCase;

@@ -2,6 +2,7 @@ using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.UseCases;
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Presentations.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace LibraryApi.Presentations.Controllers;
 /// <summary>
@@ -26,6 +27,12 @@ public class AuthController : ControllerBase
         _loginRequestAdapter = loginRequestAdapter;
     }
 
+    /// <summary>
+    /// ログインする
+    /// POST /library/api/auth/login
+    /// </summary>
+    /// <param name="request"></param>
+    /// <returns></returns>
     [HttpPost("login")]
     public async Task<ActionResult<LoginResponse>> Login([FromBody] LoginRequest request)
     {
@@ -43,5 +50,21 @@ public class AuthController : ControllerBase
         });
 
         return Ok(new LoginResponse { Message = "ログインに成功しました。" });
+    }
+
+
+    /// <summary>
+    /// ログアウトする
+    /// POST /library/api/auth/logout
+    /// </summary>
+    /// <returns>成功メッセージ(200 OK)</returns>
+    [HttpPost("logout")]
+    [Authorize]   // ログアウトは認証が必要(ログイン中のユーザーが対象)
+    public ActionResult<LogoutResponse> Logout()
+    {
+        // 認証トークンの Cookie を削除する(以降のリクエストで送られなくなる)
+        Response.Cookies.Delete(AuthCookieName);
+
+        return Ok(new LogoutResponse { Message = "ログアウトしました。" });
     }
 }

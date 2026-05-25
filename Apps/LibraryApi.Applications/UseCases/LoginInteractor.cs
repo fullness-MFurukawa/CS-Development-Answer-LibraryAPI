@@ -50,8 +50,6 @@ public class LoginInteractor : ILoginUseCase
                 "AuthenticationFailed", "ユーザー名またはパスワードが正しくありません。");
         }
 
-        // パスワードを照合する
-        //var isValid = _passwordService.Verify(input.Password, user.HashedPassword);
         // LoginInteractor の Verify 呼び出しを修正
         var isValid = _passwordService.Verify(user.HashedPassword, input.Password);
         if (!isValid)

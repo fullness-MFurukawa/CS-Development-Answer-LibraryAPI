@@ -2,6 +2,7 @@ using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.UseCases;
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Presentations.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace LibraryApi.Presentations.Controllers;
 /// <summary>
@@ -10,6 +11,7 @@ namespace LibraryApi.Presentations.Controllers;
 [ApiController]
 [Route("library/api/books")]
 [Tags("図書の取得・登録・更新・削除")]
+[Authorize] 
 public class BooksController : ControllerBase
 {
     private readonly ISearchBooksUseCase _searchBooksUseCase;
