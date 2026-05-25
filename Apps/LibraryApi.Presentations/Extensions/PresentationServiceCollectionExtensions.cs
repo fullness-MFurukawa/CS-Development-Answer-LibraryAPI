@@ -26,6 +26,10 @@ public static class PresentationServiceCollectionExtensions
         services.AddSingleton<IAdapter<BookDto, BookResponse>, BookResponseAdapter>();
         services.AddSingleton<IAdapter<RegisterBookDto, RegisterBookRequest>, RegisterBookRequestAdapter>();
         services.AddSingleton<IAdapter<UpdateBookDto, UpdateBookRequest>, UpdateBookRequestAdapter>();
+  
+        services.AddSingleton<IAdapter<RegisterUserDto, RegisterUserRequest>, RegisterUserRequestAdapter>();
+        services.AddSingleton<IAdapter<UserDto, UserResponse>, UserResponseAdapter>();
+  
         return services;
     }
 }

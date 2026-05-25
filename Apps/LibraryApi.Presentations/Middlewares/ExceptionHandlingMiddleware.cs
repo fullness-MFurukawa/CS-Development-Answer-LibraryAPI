@@ -37,6 +37,11 @@ public class ExceptionHandlingMiddleware
         {
             await _next(context);
         }
+         catch (AuthenticationException ex)
+        {
+            // 認証失敗 → 401
+            await WriteErrorResponseAsync(context, HttpStatusCode.Unauthorized, ex.ErrorCode, ex.Message);
+        }
         catch (NotFoundException ex)
         {
             // リソースが見つからない → 404

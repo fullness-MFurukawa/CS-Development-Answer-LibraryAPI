@@ -51,6 +51,9 @@ public static class ApplicationServiceCollectionExtensions
         services.AddScoped<IRegisterUserUseCase, RegisterUserInteractor>();
         services.AddSingleton<IAdapter<User, UserDto>, UserDtoAdapter>();
 
+        services.AddScoped<ILoginUseCase, LoginInteractor>();
+
+
         return services;
     }
 }

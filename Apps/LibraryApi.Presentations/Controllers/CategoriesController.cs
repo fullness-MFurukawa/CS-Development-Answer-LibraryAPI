@@ -11,7 +11,7 @@ namespace LibraryApi.Presentations.Controllers;
 /// </summary>
 [ApiController]
 [Route("library/api/categories")]
-[Tags("図書の分類検索")]
+[Tags("図書の分類")]
 public class CategoriesController : ControllerBase
 {
     private readonly IFindCategoriesUseCase _findCategoriesUseCase;
