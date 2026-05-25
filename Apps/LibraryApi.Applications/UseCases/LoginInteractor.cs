@@ -51,7 +51,9 @@ public class LoginInteractor : ILoginUseCase
         }
 
         // パスワードを照合する
-        var isValid = _passwordService.Verify(input.Password, user.HashedPassword);
+        //var isValid = _passwordService.Verify(input.Password, user.HashedPassword);
+        // LoginInteractor の Verify 呼び出しを修正
+        var isValid = _passwordService.Verify(user.HashedPassword, input.Password);
         if (!isValid)
         {
             throw new AuthenticationException(

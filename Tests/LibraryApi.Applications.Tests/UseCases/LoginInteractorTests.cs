@@ -29,9 +29,10 @@ public class LoginInteractorTests
             .Setup(s => s.FindByUsernameAsync("yamada_taro"))
             .ReturnsAsync(user);
 
+        // Arrange の中(passwordServiceMock の設定)
         var passwordServiceMock = new Mock<IPasswordService>();
         passwordServiceMock
-            .Setup(p => p.Verify("plain-password", "hashed-password"))
+            .Setup(p => p.Verify("hashed-password", "plain-password"))  // ハッシュが先、平文が後
             .Returns(true);
 
         var jwtProviderMock = new Mock<IJwtTokenProvider>();

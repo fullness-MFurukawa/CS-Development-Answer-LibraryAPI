@@ -2,10 +2,7 @@ using LibraryApi.Applications.Dtos;
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Presentations.Adapters;
 using LibraryApi.Presentations.ViewModels;
-using Microsoft.Extensions.DependencyInjection;
-
 namespace LibraryApi.Presentations.Extensions;
-
 /// <summary>
 /// プレゼンテーション層の構成要素を DI コンテナへ登録する拡張メソッドを提供する
 ///
@@ -29,7 +26,10 @@ public static class PresentationServiceCollectionExtensions
   
         services.AddSingleton<IAdapter<RegisterUserDto, RegisterUserRequest>, RegisterUserRequestAdapter>();
         services.AddSingleton<IAdapter<UserDto, UserResponse>, UserResponseAdapter>();
-  
+
+        services.AddSingleton<IAdapter<LoginDto, LoginRequest>, LoginRequestAdapter>();
+
+
         return services;
     }
 }
