@@ -48,6 +48,9 @@ public static class ApplicationServiceCollectionExtensions
         // JWT の発行を行うコンポーネント(状態を持たないため Singleton)
         services.AddSingleton<IJwtTokenProvider, JwtTokenProvider>();
         
+        services.AddScoped<IRegisterUserUseCase, RegisterUserInteractor>();
+        services.AddSingleton<IAdapter<User, UserDto>, UserDtoAdapter>();
+
         return services;
     }
 }

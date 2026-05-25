@@ -42,6 +42,11 @@ public class ExceptionHandlingMiddleware
             // リソースが見つからない → 404
             await WriteErrorResponseAsync(context, HttpStatusCode.NotFound, ex.ErrorCode, ex.Message);
         }
+        catch (ConflictException ex)   
+        {
+            // リソースの競合(ユーザー名重複など) → 409
+            await WriteErrorResponseAsync(context, HttpStatusCode.Conflict, ex.ErrorCode, ex.Message);
+        }
         catch (InvalidInputException ex)
         {
             // 入力が業務的に不正 → 400
