@@ -10,9 +10,11 @@ namespace LibraryApi.Infrastructure.Entities;
 /// ・password カラムには、ハッシュ化済みのパスワードが格納される
 ///   (ハッシュ化の処理はアプリケーション層の責務であり、本クラスは関与しない)
 /// ドメインエンティティとの相互変換は Adapter が担う
+/// ITimestampedインターフェイス
+/// ・CreatedAt と UpdatedAt の両方を持つエンティティが実装するインターフェイス
 /// </summary>
 [Table("users")]
-public class UserEntity
+public class UserEntity  : ITimestamped
 {
     /// <summary>
     /// ユーザーId(主キー、SERIAL による自動採番)
