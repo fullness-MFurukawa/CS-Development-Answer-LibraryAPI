@@ -29,7 +29,9 @@ public abstract class RepositoryTestBase
     public void BaseInitialize()
     {
         // appsettings.Test.json から接続文字列を読み込む
+        // LibraryApi.Infrastructures.Tests.csprojを参照
         var configuration = new ConfigurationBuilder()
+            .SetBasePath(AppContext.BaseDirectory)
             .AddJsonFile("appsettings.Test.json")
             .Build();
         var connectionString = configuration.GetConnectionString("LibraryDb")!;
