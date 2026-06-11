@@ -1,5 +1,5 @@
 using LibraryApi.Applications.Dtos;
-namespace LibraryApi.Applications.UseCases;
+namespace LibraryApi.Applications.UseCases.Users;
 /// <summary>
 /// ログイン(認証)を行うユースケースのインターフェイス(UC-02)
 /// </summary>

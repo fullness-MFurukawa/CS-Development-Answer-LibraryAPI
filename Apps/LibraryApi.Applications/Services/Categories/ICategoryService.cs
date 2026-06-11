@@ -1,5 +1,5 @@
 using LibraryApi.Domains.Models;
-namespace LibraryApi.Applications.Services;
+namespace LibraryApi.Applications.Services.Categories;
 /// <summary>
 /// 分類に関する操作を提供するサービスのインターフェイス
 ///

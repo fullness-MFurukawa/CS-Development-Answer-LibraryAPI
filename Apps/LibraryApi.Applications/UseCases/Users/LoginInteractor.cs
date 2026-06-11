@@ -1,8 +1,8 @@
 using LibraryApi.Applications.Authentications;
 using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.Exceptions;
-using LibraryApi.Applications.Services;
-namespace LibraryApi.Applications.UseCases;
+using LibraryApi.Applications.Services.Users;
+namespace LibraryApi.Applications.UseCases.Users;
 /// <summary>
 /// ILoginUseCase の実装(Interactor)
 ///

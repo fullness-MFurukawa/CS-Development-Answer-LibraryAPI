@@ -1,4 +1,4 @@
-namespace LibraryApi.Applications.UseCases;
+namespace LibraryApi.Applications.UseCases.Books;
 /// <summary>
 /// 図書を削除するユースケースのインターフェイス(UC-06)
 /// </summary>

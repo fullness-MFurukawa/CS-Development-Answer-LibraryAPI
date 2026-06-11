@@ -1,6 +1,6 @@
 using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.Exceptions;
-using LibraryApi.Applications.UseCases;
+using LibraryApi.Applications.UseCases.Books;
 using LibraryApi.Presentations.Adapters;
 using LibraryApi.Presentations.Controllers;
 using LibraryApi.Presentations.ViewModels;

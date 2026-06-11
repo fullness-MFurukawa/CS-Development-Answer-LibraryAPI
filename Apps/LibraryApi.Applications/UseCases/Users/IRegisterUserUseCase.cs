@@ -1,5 +1,5 @@
 using LibraryApi.Applications.Dtos;
-namespace LibraryApi.Applications.UseCases;
+namespace LibraryApi.Applications.UseCases.Users;
 /// <summary>
 /// ユーザーを登録するユースケースのインターフェイス(UC-01)
 /// </summary>

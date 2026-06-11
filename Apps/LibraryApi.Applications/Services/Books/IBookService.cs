@@ -1,5 +1,5 @@
 using LibraryApi.Domains.Models;
-namespace LibraryApi.Applications.Services;
+namespace LibraryApi.Applications.Services.Books;
 /// <summary>
 /// 図書に関する操作を提供するサービスのインターフェイス
 ///

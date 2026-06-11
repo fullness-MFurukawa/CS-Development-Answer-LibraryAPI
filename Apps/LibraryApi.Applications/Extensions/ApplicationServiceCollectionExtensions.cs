@@ -1,9 +1,13 @@
 using LibraryApi.Applications.Adapters;
 using LibraryApi.Applications.Authentications;
 using LibraryApi.Applications.Dtos;
-using LibraryApi.Applications.Services;
-using LibraryApi.Applications.UseCases;
+using LibraryApi.Applications.Services.Books;
+using LibraryApi.Applications.Services.Categories;
+using LibraryApi.Applications.Services.Users;
+using LibraryApi.Applications.UseCases.Books;
+using LibraryApi.Applications.UseCases.Categoriess;
 using LibraryApi.Applications.UseCases.UnitOfWorks;
+using LibraryApi.Applications.UseCases.Users;
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Domains.Models;
 using Microsoft.Extensions.DependencyInjection;
@@ -52,7 +56,6 @@ public static class ApplicationServiceCollectionExtensions
         services.AddSingleton<IAdapter<User, UserDto>, UserDtoAdapter>();
 
         services.AddScoped<ILoginUseCase, LoginInteractor>();
-
 
         return services;
     }

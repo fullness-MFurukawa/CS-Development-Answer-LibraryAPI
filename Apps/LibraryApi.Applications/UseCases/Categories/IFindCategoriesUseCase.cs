@@ -1,5 +1,5 @@
 using LibraryApi.Applications.Dtos;
-namespace LibraryApi.Applications.UseCases;
+namespace LibraryApi.Applications.UseCases.Categoriess;
 /// <summary>
 /// 分類一覧を取得するユースケースのインターフェイス
 ///

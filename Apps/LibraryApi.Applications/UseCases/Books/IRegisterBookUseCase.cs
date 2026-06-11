@@ -1,5 +1,5 @@
 using LibraryApi.Applications.Dtos;
-namespace LibraryApi.Applications.UseCases;
+namespace LibraryApi.Applications.UseCases.Books;
 /// <summary>
 /// 新しい図書を登録するユースケースのインターフェイス(UC-04)
 /// </summary>

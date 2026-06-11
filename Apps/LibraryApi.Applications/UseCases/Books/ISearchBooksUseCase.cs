@@ -1,5 +1,5 @@
 using LibraryApi.Applications.Dtos;
-namespace LibraryApi.Applications.UseCases;
+namespace LibraryApi.Applications.UseCases.Books;
 /// <summary>
 /// 図書をキーワードで検索するユースケースのインターフェイス(UC-03)
 /// </summary>

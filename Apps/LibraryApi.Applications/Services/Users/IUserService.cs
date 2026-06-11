@@ -1,5 +1,5 @@
 using LibraryApi.Domains.Models;
-namespace LibraryApi.Applications.Services;
+namespace LibraryApi.Applications.Services.Users;
 /// <summary>
 /// ユーザーに関する操作を提供するサービスのインターフェイス
 ///

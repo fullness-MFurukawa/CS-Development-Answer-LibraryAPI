@@ -1,6 +1,6 @@
 using LibraryApi.Domains.Models;
 using LibraryApi.Domains.Repositories;
-namespace LibraryApi.Applications.Services;
+namespace LibraryApi.Applications.Services.Books;
 /// <summary>
 /// IBookService の実装
 ///

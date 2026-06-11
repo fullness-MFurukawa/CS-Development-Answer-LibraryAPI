@@ -1,6 +1,6 @@
 using LibraryApi.Domains.Models;
 using LibraryApi.Domains.Repositories;
-namespace LibraryApi.Applications.Services;
+namespace LibraryApi.Applications.Services.Users;
 /// <summary>
 /// IUserService の実装
 ///

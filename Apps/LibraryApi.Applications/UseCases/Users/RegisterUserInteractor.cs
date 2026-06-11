@@ -1,11 +1,11 @@
 using LibraryApi.Applications.Authentications;
 using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.Exceptions;
-using LibraryApi.Applications.Services;
-using LibraryApi.Applications.UseCases.UnitOfWorks; // IUnitOfWork(実際の名前空間に合わせる)
+using LibraryApi.Applications.Services.Users;
+using LibraryApi.Applications.UseCases.UnitOfWorks; 
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Domains.Models;
-namespace LibraryApi.Applications.UseCases;
+namespace LibraryApi.Applications.UseCases.Users;
 /// <summary>
 /// IRegisterUserUseCase の実装(Interactor)
 ///

@@ -1,8 +1,8 @@
 using LibraryApi.Applications.Dtos;
-using LibraryApi.Applications.Services;
+using LibraryApi.Applications.Services.Categories;
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Domains.Models;
-namespace LibraryApi.Applications.UseCases;
+namespace LibraryApi.Applications.UseCases.Categoriess;
 /// <summary>
 /// IFindCategoriesUseCase の実装(Interactor)
 ///

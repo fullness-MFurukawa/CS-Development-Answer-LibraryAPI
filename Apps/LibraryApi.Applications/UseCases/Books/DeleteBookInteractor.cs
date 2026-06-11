@@ -1,7 +1,7 @@
 using LibraryApi.Applications.Exceptions;
-using LibraryApi.Applications.Services;
+using LibraryApi.Applications.Services.Books;
 using LibraryApi.Applications.UseCases.UnitOfWorks; 
-namespace LibraryApi.Applications.UseCases;
+namespace LibraryApi.Applications.UseCases.Books;
 /// <summary>
 /// IDeleteBookUseCase の実装(Interactor)
 ///
