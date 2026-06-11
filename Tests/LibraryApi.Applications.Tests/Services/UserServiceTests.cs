@@ -1,4 +1,4 @@
-using LibraryApi.Applications.Services;
+using LibraryApi.Applications.Services.Users;
 using LibraryApi.Domains.Models;
 using LibraryApi.Domains.Repositories;
 using Moq;

@@ -1,6 +1,6 @@
 using LibraryApi.Applications.Exceptions;
-using LibraryApi.Applications.Services;
-using LibraryApi.Applications.UseCases;
+using LibraryApi.Applications.Services.Books;
+using LibraryApi.Applications.UseCases.Books;
 using LibraryApi.Applications.UseCases.UnitOfWorks;
 using LibraryApi.Domains.Models;
 using Moq;

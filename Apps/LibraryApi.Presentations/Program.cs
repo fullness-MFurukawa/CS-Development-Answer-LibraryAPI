@@ -104,7 +104,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Title = "📚 C# REST API開発演習 解答例",
         Version = "v1",
-        Description = "図書管理システムの REST API(DDD・クリーンアーキテクチャによる解答例)",
+        Description = "図書管理システムの REST API",
     });
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);

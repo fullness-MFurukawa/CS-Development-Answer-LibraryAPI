@@ -1,8 +1,9 @@
 using LibraryApi.Applications.Adapters;
 using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.Exceptions;
-using LibraryApi.Applications.Services;
-using LibraryApi.Applications.UseCases;
+using LibraryApi.Applications.Services.Books;
+using LibraryApi.Applications.Services.Categories;
+using LibraryApi.Applications.UseCases.Books;
 using LibraryApi.Applications.UseCases.UnitOfWorks;
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Domains.Models;

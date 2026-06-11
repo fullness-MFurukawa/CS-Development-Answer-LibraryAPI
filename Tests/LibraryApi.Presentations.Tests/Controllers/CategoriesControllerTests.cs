@@ -1,5 +1,5 @@
 using LibraryApi.Applications.Dtos;
-using LibraryApi.Applications.UseCases.Categoriess;
+using LibraryApi.Applications.UseCases.Categories;
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Presentations.Adapters;
 using LibraryApi.Presentations.Controllers;

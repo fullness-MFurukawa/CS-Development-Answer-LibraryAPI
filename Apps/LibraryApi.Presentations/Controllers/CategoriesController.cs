@@ -1,5 +1,5 @@
 using LibraryApi.Applications.Dtos;
-using LibraryApi.Applications.UseCases.Categoriess;
+using LibraryApi.Applications.UseCases.Categories;
 using LibraryApi.Domains.Adapters;
 using LibraryApi.Presentations.ViewModels;
 using Microsoft.AspNetCore.Authorization;

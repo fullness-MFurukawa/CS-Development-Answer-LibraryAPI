@@ -1,8 +1,8 @@
 using LibraryApi.Applications.Authentications;
 using LibraryApi.Applications.Dtos;
 using LibraryApi.Applications.Exceptions;
-using LibraryApi.Applications.Services;
-using LibraryApi.Applications.UseCases;
+using LibraryApi.Applications.Services.Users;
+using LibraryApi.Applications.UseCases.Users;
 using LibraryApi.Domains.Models;
 using Moq;
 namespace LibraryApi.Applications.Tests.UseCases;
